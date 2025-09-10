@@ -8,7 +8,7 @@
 }
 body {
   background-color: black;
-  height: 100vh;
+  height: 500vh;
 }
 #interface {
   max-width: 1280px;
@@ -99,6 +99,16 @@ section.topo-do-site #flex {
   cursor: pointer;
   transition: 0.2s;
 }
+h2.titulo {
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15vh;
+}
+h2.titulo span {
+  color: rgb(104, 96, 96);
+}
 #btn-contato button:hover {
   box-shadow: 0px 0px 8px rgb(99, 84, 84);
   transform: scale(1.05);
@@ -119,4 +129,56 @@ section.topo-do-site #flex {
   100% {
     top: 30px;
   }
+}
+
+section.Especialidades {
+  padding: 40px 4%;
+}
+
+.flex {
+  display: block;
+}
+.especialidades-container {
+  display: flex;
+  justify-content: center;
+  gap: 3vw; /* espaçamento entre os cards */
+  margin-top: 12vh;
+  flex-wrap: wrap; /* quebra para linha de baixo em telas pequenas */
+}
+
+.especialidades-box {
+  color: #fff;
+  font-size: 12px;
+  max-width: 300px;
+  text-align: justify;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.especialidades-box i {
+  font-size: 35px;
+  color: red;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.especialidades-box h3 {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+
+.especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.img-sobre img{
+  margin-top: 25vh;
+  margin-left: 8vw;
+  height: 45vh;
+  width: 18vw;
+  border-radius: 4%;
 }
