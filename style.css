@@ -141,9 +141,9 @@ section.Especialidades {
 .especialidades-container {
   display: flex;
   justify-content: center;
-  gap: 3vw; /* espaçamento entre os cards */
+  gap: 6vw;
   margin-top: 12vh;
-  flex-wrap: wrap; /* quebra para linha de baixo em telas pequenas */
+  flex-wrap: wrap;
 }
 
 .especialidades-box {
@@ -175,10 +175,54 @@ section.Especialidades {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
 }
 
-.img-sobre img{
-  margin-top: 25vh;
-  margin-left: 8vw;
-  height: 45vh;
-  width: 18vw;
-  border-radius: 4%;
+.img-sobre img {
+  margin-top: 28vh;
+  margin-left: 5vw;
+  height: 53vh;
+  width: 20vw;
+  border-radius: 5%;
+}
+
+section.sobre {
+  padding: 40px 4%;
+}
+section.sobre .flex {
+  align-items: center;
+}
+.sobre .txt-sobre {
+  color: white;
+}
+#Gabriel {
+  display: flex;
+  margin-top: -53vh;
+  margin-left: 29vw;
+  font-size: 16px;
+}
+#Gabriel span {
+  color: rgb(122, 121, 121);
+}
+#inde p {
+  margin-top: 2vh;
+  margin-left: 29vw;
+  max-width: 700px;
+  text-align: justify;
+}
+.btn-social {
+  margin-top: 4vh;
+  margin-left: 28vw;
+}
+.btn-social button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-social button:hover {
+  background-color: #555;
 }
