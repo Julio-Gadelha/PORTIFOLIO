@@ -226,3 +226,51 @@ section.sobre .flex {
 .btn-social button:hover {
   background-color: #555;
 }
+
+.Interface #nome h1 {
+  margin-top: 30vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  gap: 9px;
+}
+.Interface #nome span {
+  color: gray;
+}
+
+section.portfolio {
+  padding: 80px 0;
+}
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px; 
+  justify-items: center;
+  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+
+.portfolio-container .portfolio-box{
+  margin-left: 9vw;
+  margin-right: 10vw;
+  min-width: 200px;
+  height: 350px;
+  border: 2px solid red;
+  border-radius: 16px;
+}
+.portfolio-container .projeto1{
+background-image: url(./image/jogo.png);
+}
+.portfolio-container .projeto2{
+background-image: url(./image/projeto2.png);
+}
+.portfolio-container .projeto3{
+background-image: url(./image/projeto3.png);
+}
+.portfolio-container .projeto4{
+background-image: url(./image/projeto4.png);
+}
