@@ -252,24 +252,51 @@ section.portfolio {
   margin: 0 auto;
 }
 
-.portfolio-container .portfolio-box {
-  margin-left: 9vw;
-  margin-right: 10vw;
-  min-width: 200px;
-  height: 350px;
-
-  border: 2px solid red;
-  border-radius: 16px;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 30px; 
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 20px;
 }
+
+.portfolio-container .portfolio-box {
+  min-width: 220px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid red;
+  border-radius: 16px;  
+  background-position-y: 0%;
+  
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.portfolio-container .portfolio-box:hover {
+  background-position-y: 100%;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+ 
+}
+
 .portfolio-container .projeto1 {
   background-image: url(./image/jogo.png);
+   transition: background-position-y 10s;
 }
 .portfolio-container .projeto2 {
   background-image: url(./image/projeto2.png);
+   transition: background-position-y 10s;
 }
 .portfolio-container .projeto3 {
   background-image: url(./image/projeto3.png);
+   transition: background-position-y 10s;
 }
 .portfolio-container .projeto4 {
   background-image: url(./image/projeto4.png);
+   transition: background-position-y 10s;
 }
